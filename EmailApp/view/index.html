@@ -44,20 +44,22 @@
       height: 100%;
       top: 0;
       left: 0;
-      background:linear-gradient(to bottom left,rgb(0, 255, 251),rgb(208, 0, 255));
+      background: linear-gradient(
+        to bottom left,
+        rgb(0, 255, 251),
+        rgb(208, 0, 255)
+      );
       z-index: -1;
-      
     }
     form {
-      width: 90%;
-      height: 80vh;
-
+      width: 380px;
+      
       display: flex;
       flex-direction: column;
       background-color: #eeeeeed6;
-      gap: 15px;
+      gap: 10px;
       font-size: 18px;
-      padding: 10px 20px 30px 20px;
+      padding: 10px;
       z-index: 2;
       border-radius: 5px;
     }
@@ -69,7 +71,8 @@
       display: flex;
       flex-direction: column;
       gap: 10px;
-      flex-grow: 1;
+
+      width: 100%;
     }
     form .form-group input {
       width: 100%;
@@ -78,7 +81,6 @@
       font-family: inherit;
       font-size: inherit;
       padding-left: 10px;
-      flex-grow: 1;
     }
     form .form-group input:focus {
       outline: none;
@@ -108,8 +110,6 @@
     .form-group ul {
       list-style: none;
     }
-
-    
   </style>
   <body>
     <div class="container">
@@ -122,14 +122,24 @@
           <label for="email">Name</label>
           <div class="input-box">
             <i class="fa-regular fa-user"></i>
-            <input name="name" type="text" id="email" placeholder="Enter your name" />
+            <input
+              name="name"
+              type="text"
+              id="email"
+              placeholder="Enter your name"
+            />
           </div>
         </div>
         <div class="form-group">
           <label for="email">Email</label>
           <div class="input-box">
             <i class="fa-regular fa-envelope"></i>
-            <input name="email" type="email" id="email" placeholder="Enter your email" />
+            <input
+              name="email"
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+            />
           </div>
         </div>
         <div class="form-group">
@@ -137,7 +147,7 @@
           <div class="input-box">
             <i class="fa-regular fa-comments"></i>
             <input
-            name="message"
+              name="message"
               type="text"
               id="password"
               placeholder="Enter your Message"
@@ -148,7 +158,5 @@
       </form>
     </div>
   </body>
-  <script>
-
-  </script>
+  <script></script>
 </html>
